@@ -1,0 +1,25 @@
+Model: "graph_neuralnetwork"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_2 (InputLayer)        [(2, 9, 12)]              0         
+                                                                 
+ tf.reshape_1 (TFOpLambda)   (2, 108)                  0         
+                                                                 
+ gcn_2 (GCN)                 (2, 108)                  34992     
+                                                                 
+ graph_layer1 (Activation)   (2, 108)                  0         
+                                                                 
+ gcn_3 (GCN)                 (2, 108)                  34992     
+                                                                 
+ graph_layer2 (Activation)   (2, 108)                  0         
+                                                                 
+ dense1 (Dense)              (2, 32)                   3488      
+                                                                 
+ out_layer (Dense)           (2, 7)                    231       
+                                                                 
+=================================================================
+Total params: 73,703
+Trainable params: 73,703
+Non-trainable params: 0
+_________________________________________________________________
